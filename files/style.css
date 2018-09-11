@@ -3489,19 +3489,28 @@ button.btn-price:focus {
 }
 
 .offer-page__text {
-	margin-top: 30px;
+	margin-top: 22px;
+	color: #769daa;
+	font-size: 16px;
+	line-height: 1.2;
 	padding-left: 20px;
 	padding-right: 20px;
-	color: #666;
-	font-size: 12px;
 }
 
 .offer-page__text h4 {
 	text-align: center;
-	font-size: 14px;
+	font-size: 22px;
 	margin-top: 20px;
+	margin-bottom: 8px;
 }
 
+.offer-page__text ul {
+	padding: 0;
+}
+
+.offer-page__text ul + h4 {
+	margin-top: 36px;
+}
 .offer-page__line {
 	color: #769daa;
 	font-weight: 400;
@@ -4138,6 +4147,114 @@ color: #769daa;
 }
 .offer-page .breadcrumb>li+li:before {
 color: #769daa;
+}
+
+
+.alt-offers {
+	padding-top: 7px;
+}
+
+.alt-offers__title {
+	color: #769daa;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 16px;
+	text-align: center;
+	margin: 0;
+}
+
+.alt-offers__inner {
+	margin-top: 16px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.alt-offers__card {
+	width: calc(25% - 10px);
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 120px;
+	background: url('../images/alt-tender.png') center no-repeat;
+	background-size: cover;
+	background-color: #b4d5b8;
+	border-radius: 4px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	margin-bottom: 10px;
+	padding: 11px 8px;
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+}
+.alt-offers__card:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 4px;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.25);
+	z-index: 1;
+}
+
+.alt-offers__card-bg {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 4px;
+}
+
+.alt-offers__card-title {
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+	overflow: hidden;
+	margin: 0;
+	position: relative;
+	height: 98%;
+	z-index: 2;
+}
+
+
+.offer-page .slick-dots {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	list-style: none;
+	margin-top: 11px;
+	margin-bottom: 10px;
+}
+
+.offer-page .slick-dots li {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.offer-page .slick-dots button {
+	width: 12px;
+	height: 12px;
+	background-color: rgba(118, 157, 170, 0.5);
+	display: block;
+	border: none;
+	padding: 0;
+	margin: 0;
+	border-radius: 100%;
+	text-indent: -9999px;
+	outline: none;
+}
+.offer-page .slick-dots .slick-active button {
+	background-color: #769daa;
 }
 
 .modal--video {

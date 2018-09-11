@@ -11,6 +11,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!--        <link rel="shortcut icon" href="design/images/#" />-->
+
+    <link rel="stylesheet" href="./slick.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./bootstrap_col_15.css">
@@ -203,7 +205,59 @@
                         </div>
                     </div>
                 </div>
-
+                <section class="alt-offers wrapper ">
+                    <h3 class="alt-offers__title ">Также может быть интересно</h3>
+                    <div class="alt-offers__inner ">
+                        <a href="# " class="alt-offers__card ">
+                            <img class="alt-offers__card-bg " src="../images/95791632132f597a5f8438512c3a7543.jpg " alt=" ">
+                            <h4 class="alt-offers__card-title ">Рыбалка на Ладожком озере</h4>
+                        </a>
+                        <a href="# " class="alt-offers__card ">
+                            <img class="alt-offers__card-bg " src="../images/d20264fe2f4976c20c780f3da6c30ed6.jpg " alt=" ">
+                            <h4 class="alt-offers__card-title ">Трехдневый турпоход группой по Уральским горам</h4>
+                        </a>
+                        <a href="# " class="alt-offers__card ">
+                            <img class="alt-offers__card-bg " src="../images/95791632132f597a5f8438512c3a7543.jpg " alt=" ">
+                            <h4 class="alt-offers__card-title ">Рыбалка на Ладожком озере</h4>
+                        </a>
+                        <a href="# " class="alt-offers__card ">
+                            <img class="alt-offers__card-bg " src="../images/d20264fe2f4976c20c780f3da6c30ed6.jpg " alt=" ">
+                            <h4 class="alt-offers__card-title ">Трехдневый турпоход группой по Уральским горам</h4>
+                        </a>
+                        <a href="# " class="alt-offers__card ">
+                            <img class="alt-offers__card-bg " src="../images/95791632132f597a5f8438512c3a7543.jpg " alt=" ">
+                            <h4 class="alt-offers__card-title ">Рыбалка на Ладожком озере</h4>
+                        </a>
+                        <a href="# " class="alt-offers__card ">
+                            <img class="alt-offers__card-bg " src="../images/d20264fe2f4976c20c780f3da6c30ed6.jpg " alt=" ">
+                            <h4 class="alt-offers__card-title ">Трехдневый турпоход группой по Уральским горам</h4>
+                        </a>
+                        <a href="# " class="alt-offers__card ">
+                            <img class="alt-offers__card-bg " src="../images/95791632132f597a5f8438512c3a7543.jpg " alt=" ">
+                            <h4 class="alt-offers__card-title ">Рыбалка на Ладожком озере</h4>
+                        </a>
+                        <a href="# " class="alt-offers__card ">
+                            <img class="alt-offers__card-bg " src="../images/d20264fe2f4976c20c780f3da6c30ed6.jpg " alt=" ">
+                            <h4 class="alt-offers__card-title ">Трехдневый турпоход группой по Уральским горам</h4>
+                        </a>
+                        <a href="# " class="alt-offers__card ">
+                            <img class="alt-offers__card-bg " src="../images/95791632132f597a5f8438512c3a7543.jpg " alt=" ">
+                            <h4 class="alt-offers__card-title ">Рыбалка на Ладожком озере</h4>
+                        </a>
+                        <a href="# " class="alt-offers__card ">
+                            <img class="alt-offers__card-bg " src="../images/d20264fe2f4976c20c780f3da6c30ed6.jpg " alt=" ">
+                            <h4 class="alt-offers__card-title ">Трехдневый турпоход группой по Уральским горам</h4>
+                        </a>
+                        <a href="# " class="alt-offers__card ">
+                            <img class="alt-offers__card-bg " src="../images/95791632132f597a5f8438512c3a7543.jpg " alt=" ">
+                            <h4 class="alt-offers__card-title ">Рыбалка на Ладожком озере</h4>
+                        </a>
+                        <a href="# " class="alt-offers__card ">
+                            <img class="alt-offers__card-bg " src="../images/d20264fe2f4976c20c780f3da6c30ed6.jpg " alt=" ">
+                            <h4 class="alt-offers__card-title ">Трехдневый турпоход группой по Уральским горам</h4>
+                        </a>
+                    </div>
+                </section>
                     <section class="offer-page__text ">
                         <h4>
                             КАК ЭТО РАБОТАЕТ?
@@ -256,6 +310,8 @@
         <script src="./jquery.bxslider.min.js "></script>
         <script src="./jquery.fancybox.pack.js "></script>
 
+        <script src="./slick.min.js "></script>
+
         <script src="./jquery.datetimepicker.full.min.js "></script>
         <script src="./php-date-formatter.min.js "></script>
         <script src="./functions.js "></script>
@@ -269,6 +325,28 @@
         <script> isAuthorized = " "; </script>
 
         <script>
-            $('.bxslider').bxSlider({});
+            $('.alt-offers__inner').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                arrows: false,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 649,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 429,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    }
+                ]
+            });
         </script>
 </body></html>
