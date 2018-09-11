@@ -123,19 +123,19 @@
                             <div class="offer-page__detail">Детали тура</div>
                         </button>
                         <div id="route__main" class="panel-collapse collapse in route">
-                            <div class="route__line">
+                            <div class="route__line route__line--transport">
                                 <div class="route__in">12:30</div>
                                 <div class="route__time">Всего в пути: 2:50</div>
-                                <div class="rout__out">15:20</div>
+                                <div class="route__out">15:20</div>
                             </div>
-                            <div class="route__line">
-                                <div class="route__text-def">День недели (вылет):</div>
-                                <div class="route__text">Вторник</div>
-                                <div class="route__text-def route__text-out">(прилет):</div>
-                                <div class="route__text">Вторник</div>
-                                <div class="route__text-map">Майкоп</div>
+                            <div class="route__line route__line--days">
+                                <span class="route__text-def">День недели (вылет):</span>
+                                <span class="route__text">Вторник</span>
+                                <span class="route__text-def route__text-out">(прилет):</span>
+                                <span class="route__text">Вторник</span>
+                                <span class="route__text-map">Майкоп</span>
                             </div>
-                            <div class="route__line">
+                            <div class="route__line route__line--hotel">
                                 <div class="route__day">10 дней</div>
                                 <div class="route__hotel">Гостиница Интурист</div>
                                 <div class="route__hotel-stars">
@@ -146,32 +146,34 @@
                                     <div class="route__hotel-star"></div>
                                 </div>
                             </div>
-                            <div class="route__line">
+                            <div class="route__line route__line--more">
                                 <div class="route__eat">Завтраки</div>
                                 <div class="route__pets">с питомцем</div>
                             </div>
-                            <div class="route__line">
+                            <div class="route__line route__line--contacts">
                                 <div class="route__operator">
-                                    <div class="route__text-def">Ваш туроператор:</div>
-                                    Протур
+                                    <span class="route__text-def">Ваш туроператор:
+                                    </span> Протур
                                 </div>
                                 <button class="route__button-contact" data-toggle="collapse" href="#route__contacts">
                                     Контакты
                                 </button>
                             </div>
-                            <div id="route__contacts" class="panel-collapse collapse in">
-                                <div class="route__phone">
-                                    <div class="route__text-def">Телефон</div>
-                                    <a href="tel:+7921299212" class="route__phone-link">+7 921 129-92-12</a>
-                                </div>
-                                <div class="route__site">
-                                    <div class="route__text-def">Сайт:</div>
-                                    <a href="#" class="route__site-link">Текст ссылки</a>
-                                </div>
+                        </div>
+                    </div>
+                    <div id="route__contacts" class="panel-collapse collapse in">
+                        <div class="route__contacts">
+                            <div class="route__phone">
+                                <div class="route__phone-def">Телефон:</div>
+                                <a href="tel:+7921299212" class="route__phone-link">+7 921 129-92-12</a>
+                            </div>
+                            <div class="route__site">
+                                <div class="route__site-def">Сайт:</div>
+                                <a href="#" class="route__site-link">Мой сайт</a>
                             </div>
                         </div>
                     </div>
-                    <div class="offer-page__line offer-page__line--flex ">
+                    <div class="offer-page__line offer-page__line--flex offer-page__line--bb ">
                         <div class="offer-page__info-number">501</div>
                         <div class="share"><button class="share__button" type="button"></button><div class="share__wrapper">
                                 <div class="share__text">Поделиться</div>
