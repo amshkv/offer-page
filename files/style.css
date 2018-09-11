@@ -3575,7 +3575,7 @@ font-family: Roboto;
 }
 
 .offer-page__line--details {
-	padding: 0 15px;
+	padding: 0;
 }
 
 .offer-page .carousel {
@@ -3702,7 +3702,7 @@ font-family: Roboto;
 	background: none;
 	outline: none;
 	display: flex;
-	padding: 0;
+	padding: 0 15px;
 	text-align: left;
 	padding-top: 11px;
 }
@@ -3710,6 +3710,11 @@ font-family: Roboto;
 .offer-page__tour-name {
 	color: #769daa;
 	font-size: 16px;
+}
+
+.route__inner {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .offer-page__detail {
@@ -3931,6 +3936,7 @@ font-family: Roboto;
 	margin-right: auto;
 }
 
+
 .route__button-contact {
 	display: block;
 	background: none;
@@ -3960,17 +3966,18 @@ font-family: Roboto;
 	display: flex;
 	position: relative;
 	background-color: #fff3cd;
-	padding-left: 15px;
-	padding-right: 15px;
 	align-items: center;
 	flex-wrap: wrap;
+	padding-left: 15px;
+	padding-right: 15px;
+	justify-content: space-between;
 }
 
 .route__phone,
 .route__site {
 	display: flex;
 	align-items: flex-end;	
-	width: 50%;
+	width: calc(50% - 6px);
 }
 
 .route__phone-def,
