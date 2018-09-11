@@ -3634,26 +3634,41 @@ font-family: Roboto;
 	margin-top: 5px;
 }
 
-	.offer-page .carousel-control.left {
+.offer-page .slick-arrow {
+	width: 25%;
+	text-indent: -9999px;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	border: none;
+	padding: 0;
+	outline: none;
+}
+
+.offer-page .slick-prev {
 	background: url(../images/ar-left.png) center no-repeat;
 	background-size: 10px;
 	opacity: 1; 
 	transition: all .3s ease-in-out;
+	left: 0;
+	z-index: 2;
 }
 
-.offer-page .carousel-control.right {
-	background: url(../images/ar-right.png) center no-repeat;
+.offer-page .slick-next {
+	background:url(../images/ar-right.png) center no-repeat;
 	background-size: 10px;
 	opacity: 1; 
- 	transition: all .3s ease-in-out;
+	 transition: all .3s ease-in-out;
+	 right: 0;
+	 z-index: 2;
 }
 
-.offer-page .carousel-control.left:hover {
+.offer-page .slick-prev:hover {
     background: rgba(0,0,0,.3) url(../images/ar-left.png) center no-repeat;
 	background-size:10px;
 	opacity:1;
 }
-.offer-page .carousel-control.right:hover {
+.offer-page .slick-next:hover {
     background: rgba(0,0,0,.3) url(../images/ar-right.png) center center no-repeat;
 	background-size:10px;
 	opacity:1;
