@@ -3635,7 +3635,9 @@ font-family: Roboto;
 }
 
 .offer-page .slick-arrow {
-	width: 25%;
+	width: 15%;
+	min-width: 15px;
+	max-width: 150px;
 	text-indent: -9999px;
 	position: absolute;
 	height: 100%;
@@ -3655,7 +3657,7 @@ font-family: Roboto;
 }
 
 .offer-page .slick-next {
-	background:url(../images/ar-right.png) center no-repeat;
+	background: url(../images/ar-right.png) center no-repeat;
 	background-size: 10px;
 	opacity: 1; 
 	 transition: all .3s ease-in-out;
@@ -3720,15 +3722,13 @@ font-family: Roboto;
 }
 
 .route__button-info {
-	height: 60px;
 	width: 100%;
 	border: none;
 	background: none;
 	outline: none;
 	display: flex;
-	padding: 0 15px;
+	padding: 16px 15px 4px;
 	text-align: left;
-	padding-top: 11px;
 }
 
 .offer-page__tour-name {
@@ -3869,6 +3869,10 @@ font-family: Roboto;
 	width: 30%;
 	margin-right: 5px;
 	box-sizing: border-box;
+}
+
+.route__day--xs {
+	display: none;
 }
 
 .route__day:before {
@@ -4192,9 +4196,7 @@ color: #769daa;
 	margin-left: 5px;
 	margin-right: 5px;
 	height: 120px;
-	background: url('../images/alt-tender.png') center no-repeat;
-	background-size: cover;
-	background-color: #b4d5b8;
+	background-color: #93cadc;
 	border-radius: 4px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 	margin-bottom: 10px;
@@ -5816,11 +5818,6 @@ button.btn-price:active, button.btn-price:hover {
 		width: calc(100% - 65px); 
 }
 
-.offers__item {
-	height: 18px;
-	line-height: 18px;
-}
-
 .chat-toggle {
 	height: 210px;
 }
@@ -5950,27 +5947,34 @@ button.btn-price:active, button.btn-price:hover {
 
 .offer-page__inner {
 	min-height: calc(100vh - 45px);
-	padding: 5px 10px;
+	padding: 5px 9px;
 }
 
 .offer-page .breadcrumb {
 	padding-top: 3px;
 	padding-bottom: 3px;
 	font-size: 10px;
+	margin-bottom: 4px;
 }
 
-.offer-page__line:not(.offer-page__line--image) {
-	padding: 3px 10px;
-	font-size: 12px;
-  line-height: 16px;
+.offer-page__wrapper {
+	border-radius: 4px;
 }
 
-.offer-page__line:nth-child(2) {
-	border-top: none;
+.offer-page__line {
+	font-size: 10px;
+	line-height: 16px;
+	padding: 7px 9px;
 }
 
 .offer-page__line--image {
 	height: 150px;
+	padding: 0;
+}
+
+.offer-page__line--offers {
+	padding-top: 5px;
+
 }
 
 .offer-page .carousel .item img {
@@ -5978,40 +5982,291 @@ button.btn-price:active, button.btn-price:hover {
 }
 
 .offer-page__title {
-	font-size: 16px;
-	line-height: 18px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 4px;
+}
+
+.offer-page__address {
+	margin-top: 0;
+}
+
+.offer-page__people {
+	margin-top: 0;
+	padding-left: 33px;
+}
+
+.offer-page__people:before {
+	width: 18px;
+	height: 18px;
+	background-size: 18px;
+	top: -2px;
+	transform: translateY(0)	
 }
 
 .offer-page .offers__item {
-	line-height: 16px;
-	height: 20px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	font-size: 11px;
+	line-height: 14px;
+	height: 18px;
+	font-size: 10px;
+	align-items: center;
+}
+
+.offer-page__stock {
+	width: 18px;
+	height: 18px;
+	font-size: 10px;
+	line-height: 18px;
+	margin-right: 6px;
 }
 
 .offer-page .offers__item-date {
-	flex-basis: 130px;
+	width: 150px;
 	margin-right: 10px;
 }
 
-.offer-page__info-number {
+.offer-page__price-type {
+	height: 20px;
 	font-size: 10px;
-  position: relative;
-  padding-top: 20px;
+	line-height: 20px;
+	margin-top: 0;
 }
-.offer-page__info-number:before {
-    content: 'Предложение';
-    color: #769daa;
-    font-family: Roboto;
-    font-size: 10px;
-    font-weight: 400;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.offer-page__line--details {
+	padding: 0;
+}
+
+.route__button-info {
+	padding-left: 9px;
+	padding-right: 9px;
+	padding-top: 8px;
+}
+
+.offer-page__detail {
+	font-size: 10px;
+	padding-right: 17px;
+	line-height: 1.2;
+}
+.offer-page__detail:after {
+	width: 18px;
+	height: 18px;
+	background-size: 7px;
+	right: -4px;
+	top: -4px;
+}
+
+.offer-page__tour-name {
+	font-size: 10px;
+	line-height: 1.2;
+}
+
+.route__line {
+	font-size: 10px;
+	line-height: 1.2;
+}
+
+.route__inner {
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+.route__line--transport {
+	padding-top: 5px;
+	padding-bottom: 2px;
+}
+
+.route__in {
+	padding-left: 25px;
+	padding-right: 5px;
+}
+
+.route__in:before {
+	width: 18px;
+	height: 18px;
+	background-size: 16px;
+	left: 0;
+	top: -6px;
+}
+
+.route__time {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.route__out {
+	padding-left: 30px;
+}
+
+.route__out:before {
+	width: 18px;
+	height: 18px;
+	background-size: 16px;
+	left: 6px;
+	top: -6px;
+}
+
+.route__line--days {
+	padding-top: 3px;
+}
+
+.route__text-map {
+	margin-left: 0;
+	margin-top: 14px;
+	padding-left: 26px;
+	display: inline-block;
+	margin-right: 43px;
+}
+
+.route__text-map:before {
+	width: 18px;
+	height: 18px;
+	transform: translateY(0);
+  background-size: 12px;
+  top: -6px;
+}
+
+.route__line--hotel {
+	margin-top: 12px;
+	flex-wrap: wrap;
+}
+
+.route__day {
+	padding-left: 25px;
+	width: auto;
+	margin-right: 0;
+	margin-top: 12px;
+}
+
+.route__day--xs {
+	display: inline-block;
+}
+
+.route__day--lg {
+	display: none;
+}
+
+.route__text-wrapper {
+	display: block;
+}
+
+.route__day:before {
+	width: 18px;
+	height: 18px;
+	background-size: 14px;
+	left: 0;
+	top: -6px;
+}
+
+.route__hotel {
+	padding-left: 26px;
+	width: auto;
+	margin-right: 10px;
+}
+
+.route__hotel:before {
+	width: 18px;
+	height: 18px;
+	background-size: 17px;
+	top: -4px;
+	left: -1px;
+}
+
+.route__hotel-stars {
+	top: -5px;
+}
+
+.route__hotel-star {
+	width: 18px;
+	height: 18px;
+	background-size: 16px;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+
+.route__line--more {
+	margin-top: 8px;
+	justify-content: space-between;
+}
+
+.route__eat {
+	width: auto;
+	padding-left: 26px;
+}
+
+.route__eat:before {
+	width: 18px;
+	height: 18px;
+	background-size: 15px;
+	top: -4px;
+	left: -1px;
+}
+
+.route__pets {
+	width: auto;
+	margin-right: 0;
+	padding-left: 26px;
+}
+
+.route__pets:before {
+	width: 18px;
+	height: 18px;
+	background-size: 16px;
+	top: -4px;
+	left: 0;
+}
+
+.route__line--contacts {
+	margin-top: 14px;
+}
+
+.route__button-contact {
+	font-size: 10px;
+	line-height: 12px;
+	margin-bottom: 7px;
+}
+
+.route__contacts {
+	margin-top: 0;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	height: 60px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	background-clip: padding-box;
+	padding-left: 8px;
+	padding-right: 8px;
+	align-content: center;
+}
+
+.route__phone, .route__site {
+	width: 100%;
+	align-items: baseline;
+}
+
+.route__phone + .route__site {
+	margin-top: 6px;
+}
+
+.route__phone-link {
+	margin-left: 18px;
+}
+
+.route__site-link {
+	margin-left: 36px;
+}
+
+.offer-page__line--buttons {
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		padding-top: 6px;
+		padding-bottom: 6px;
+}
+
+.route__phone-def, .route__site-def {
+	font-size: 10px;
+}
+
+.route__phone-link, .route__site-link {
+	font-size: 14px;
 }
 
 .share {
@@ -6033,23 +6288,82 @@ button.btn-price:active, button.btn-price:hover {
 }
 
 .offer-page__suggest {
-	width: 40px;
+	width: 135px;
 	height: 32px;
-	background-size: 40px;
 	margin-left: 0;
+	font-size: 15px;
+	line-height: 32px;
 }
 
-.offer-page__link-more {
-	margin-top: 5px;
-	margin-left: 0;
-	margin-right: 0;
-	height: 32px;
-	line-height: 32px;
-	font-size: 14px;
-	padding: 0 5px;
-	width: 100%;
-	max-width: 100%;
-	order: 1;
+.offer-page__hashtag {
+	font-size: 10px;
+	margin-top: 4px;
+}
+
+.offer-page__user-text {
+	padding-bottom: 5px;
+}
+
+.offer-page__user-text p {
+	font-size: 10px;
+	line-height: 16px;
+	margin-top: 6px;
+}
+
+.offer-page__text {
+	margin-top: 17px;
+	font-size: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.offer-page__text h4 {
+	margin-top: 0;
+font-size: 14px;
+line-height: 16px;
+margin-bottom: 12px;
+}
+
+.offer-page__text ul + h4 {
+	margin-top: 17px;
+}
+.alt-offers {
+	padding-top: 12px;
+}
+.alt-offers__title {
+font-size: 14px;
+line-height: 16px;
+}
+.alt-offers__inner {
+	margin-top: 12px;
+}
+.alt-offers__card {
+	width: calc(50% - 12px);
+	margin-left: 6px;
+	margin-right: 6px;
+	height: 100px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+.alt-offers__card-title {
+	font-size: 12px;
+	height: 96%;
+}
+
+
+.offer-page .slick-dots {
+	margin-top: 2px;
+	margin-bottom: 8px;
+}
+
+.offer-page .slick-dots li {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.offer-page .slick-dots button {
+	width: 8px;
+	height: 8px;
 }
 
 
