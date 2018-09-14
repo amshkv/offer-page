@@ -3475,7 +3475,8 @@ button.btn-price:focus {
     box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
 		height: 100%;
 		width: 100%;
-    display: block;
+		display: block;
+		position: relative;
 }
 
 .offer-page__none {
@@ -3546,6 +3547,7 @@ font-family: Roboto;
 	padding: 0;
 	height: 370px;
 	overflow: hidden;
+	position: relative;
 }
 .offer-page__line--bb {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
@@ -3645,6 +3647,7 @@ font-family: Roboto;
 	border: none;
 	padding: 0;
 	outline: none;
+	user-select: none;
 }
 
 .offer-page .slick-prev {
@@ -3688,6 +3691,22 @@ font-family: Roboto;
 	display: flex;
 	flex-wrap: wrap
 }
+
+.offers-page__toggle {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	right: 0;
+	top: 0;
+	display: block;
+	padding: 0;
+	background: url(../images/toggle.png) center no-repeat;
+	border: 0;
+	z-index: 3;
+	cursor: pointer;
+	outline: none;
+}
+
 .offer-page .offers__item-date {
 	width: calc(50% - 14px);
 	margin-right: 20px;
@@ -3976,6 +3995,7 @@ font-family: Roboto;
 	line-height: 16px;
 	outline: none;
 	position: relative;
+	z-index: 100;
 }
 
 .route__button-contact:after {
@@ -3986,7 +4006,12 @@ font-family: Roboto;
 	background-color: #284f56;
 	position: absolute;
 	height: 1px;
+	transition: transform .3s ease-in-out;
 }
+
+.route__button-contact:hover:after {
+	transform: scale(0);
+} 
 
 .route__contacts {
 	margin-top: 9px;
@@ -3999,8 +4024,12 @@ font-family: Roboto;
 	padding-left: 15px;
 	padding-right: 15px;
 	justify-content: space-between;
+	z-index: 100;
 }
 
+.offer-page__title-off {
+	display: none;
+}
 .route__phone,
 .route__site {
 	display: flex;
@@ -4018,6 +4047,7 @@ font-family: Roboto;
 .route__site-link {
 	color: #769daa;
 	font-size: 22px;
+	transition: all .3s ease-in-out;
 }
 
 .route__phone-link {
@@ -4168,6 +4198,114 @@ color: #769daa;
 color: #769daa;
 }
 
+.offer-page__wrapper--no-active:before {
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.2);
+	position: absolute;
+	border-radius: 6px;
+	z-index: 10;
+}
+
+.offer-page__wrapper--no-active .slick-arrow {
+	display: none!important;
+}
+
+.offer-page__wrapper--no-active .offer-page__title-off {
+	position: absolute;
+	top: 49%;	
+	width: 100%;
+	left: 0;
+	text-align: center;
+	display: block;
+	color: white;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 25px;
+	z-index: 100;
+	margin: 0;
+}
+
+.offer-page__wrapper--no-active .offer-page__title-off:before {
+	content: '';
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: -40px;
+	left: 50%;
+	transform:translateX(-50%);
+	background: url("../images/not-actual.png") center no-repeat;
+}
+
+.offer-page__wrapper--no-active .offer-page__people:before {
+	background-image: url('../images/people_gray.png');
+}
+
+
+.offer-page__wrapper--no-active .route__in:before {
+	background-image: url('../images/fly_top_gray.png');
+}
+.offer-page__wrapper--no-active .route__out:before {
+	background-image: url('../images/fly_bottom_gray.png');
+}
+.offer-page__wrapper--no-active .route__text-map:before {
+	background-image: url('../images/maps-icon_gray.png');
+}
+.offer-page__wrapper--no-active .route__day:before {
+	background-image: url('../images/calendar_gray.png');
+}
+.offer-page__wrapper--no-active .route__hotel:before {
+	background-image: url('../images/hotel_gray.png');
+}
+.offer-page__wrapper--no-active .route__hotel-star {
+	background-image: url('../images/star_gray.png');
+}
+.offer-page__wrapper--no-active .route__eat:before {
+	background-image: url('../images/eat_gray.png');
+}
+.offer-page__wrapper--no-active .route__pets:before {
+	background-image: url('../images/pets_gray.png');
+}
+.offer-page__wrapper--no-active .share__button {
+	background-color: #b7b7b7;
+}
+
+.offer-page .offer-page__wrapper--no-active .like {
+	background-color: #b7b7b7;
+}
+.offer-page__wrapper--no-active .offer-page__suggest {
+	background-color: #b7b7b7;
+}
+.offer-page__wrapper--no-active .offer-page__line {
+	color: #b7b7b7;
+}
+.offer-page__wrapper--no-active .route__line {
+	color: #b7b7b7;
+}
+.offer-page__wrapper--no-active .offer-page__tour-name {			color: #b7b7b7;
+}
+.offer-page__wrapper--no-active .offer-page__title {
+	color: #b7b7b7;
+}
+.offer-page__wrapper--no-active .offer-page__hashtag {				color: #b7b7b7;
+}
+
+.offer-page__wrapper--no-active .offer-page__stock {					background-color: #b7b7b7;
+}
+
+.offer-page__wrapper--no-active .offer-page__price-type {			color: #b7b7b7;
+}
+
+.offer-page__wrapper--no-active .route__button-contact {
+	color: #fff
+}
+
+.offer-page__wrapper--no-active .route__button-contact:after {
+	background-color: #fff
+}
 
 .alt-offers {
 	padding-top: 7px;
@@ -5961,6 +6099,23 @@ button.btn-price:active, button.btn-price:hover {
 	border-radius: 4px;
 }
 
+.offer-page__wrapper--no-active:before {
+	border-radius: 4px;
+}
+
+.offer-page__wrapper--no-active .offer-page__title-off {
+	top: 49%;	
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.offer-page__wrapper--no-active .offer-page__title-off:before {
+	width: 18px;
+	height: 18px;
+	top: -25px;
+	background-size: 16px;
+}
+
 .offer-page__line {
 	font-size: 10px;
 	line-height: 16px;
@@ -6011,6 +6166,11 @@ button.btn-price:active, button.btn-price:hover {
 	align-items: center;
 }
 
+.offers-page__toggle {
+	width: 30px;
+	height: 30px;
+	background-size: 7px;
+}
 .offer-page__stock {
 	width: 18px;
 	height: 18px;
@@ -6222,6 +6382,10 @@ button.btn-price:active, button.btn-price:hover {
 .route__button-contact {
 	font-size: 10px;
 	line-height: 12px;
+	margin-bottom: 7px;
+}
+
+.route__operator {
 	margin-bottom: 7px;
 }
 
