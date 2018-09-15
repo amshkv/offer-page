@@ -3492,12 +3492,12 @@ button.btn-price:focus {
 
 .metric--users:before {
 	background-image: url('../images/users-icon.png');
-	top: 0;
+	top: -3px;
 }
 
 .metric--offers:before {
 	background-image: url('../images/offer-icon.png');
-	top: -1px;
+	top: -4px;
 }
 
 
@@ -4334,7 +4334,7 @@ color: #769daa;
 .offer-page__wrapper--no-active .route__pets:before {
 	background-image: url('../images/pets_gray.png');
 }
-.offer-page__wrapper--no-active .offer-page__info-number-views:before {
+.offer-page__wrapper--no-active .offer-page__info-number-views:beforeg {
 	background-image: url('../images/eye-small_gray.png');
 }
 .offer-page__wrapper--no-active .share__button {
@@ -5064,6 +5064,14 @@ color: #769daa;
 		height: 14px;
 		background-size: 12px;
 		left: -1px;
+	}
+
+	.metric--users:before {
+		top: 0;
+	}
+
+	.metric--offers:before {
+		top: -1px;
 	}
 
 	.chats-page article .wrapper {
