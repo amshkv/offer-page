@@ -21,7 +21,7 @@ body a:focus, body a:hover {
 	}
 .right{
 	float:right;
-	position: relative;3
+	position: relative;
 	}
 .center{	
 	position:relative;
@@ -3458,6 +3458,49 @@ button.btn-price:focus {
   font-size: 18px;
   font-weight: 400;
 }
+
+.metrics {
+	background-color: #284f56;
+}
+
+.metrics__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 40px;
+	padding-left: 38px;
+	padding-right: 38px;
+}
+
+.metric {
+	font-size: 16px;
+	line-height: 16px;
+	color: #fff;
+	padding-left: 30px;
+	position: relative;
+}
+
+.metric:before {
+	content: '';
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	left: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.metric--users:before {
+	background-image: url('../images/users-icon.png');
+	top: 0;
+}
+
+.metric--offers:before {
+	background-image: url('../images/offer-icon.png');
+	top: -1px;
+}
+
+
 .offer-page.common-page .main-menu a {
 	width: 200px;
 	text-align: center;
@@ -3555,7 +3598,6 @@ font-family: Roboto;
 .offer-page__line--flex {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	position: relative;
 }
 
@@ -3606,9 +3648,6 @@ font-family: Roboto;
 	font-weight: 400;
 	margin: 5px 0;
 	text-align: left;
-}
-.offer-page__title--no-active {
-	color: #b7b7b7;
 }
 
 .offer-page__stock {
@@ -3712,10 +3751,36 @@ font-family: Roboto;
 	margin-right: 20px;
 }
 
-.offer-page__info-number {
-	color: #b7b7b7;
+.offer-page__info-number-wrapper {
+	margin-top: 5px;
 	margin-right: 5px;
 }
+
+.offer-page__info-number {
+	color: #b7b7b7;
+}
+
+.offer-page__info-number-inner {
+	display: flex;
+	margin-top: 6px;
+}
+
+.offer-page__info-number-views {
+	position: relative;
+	padding-left: 30px;
+	margin-right: 18px;
+}
+
+.offer-page__info-number-views:before {
+	content: '';
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	left: 0;
+	top: -2px;
+	background: url('../images/eye-small.png') center no-repeat;
+}
+
 .offer-page__link-more {
 	border-radius: 5px;
 	background-color: #769daa;
@@ -4765,6 +4830,15 @@ color: #769daa;
 
 /*large-phones*/
 @media screen and (max-width: 767px) {
+
+	.metrics__inner {
+		flex-wrap: wrap;
+		height: 60px;
+	}
+
+	.metric {
+		width: 100%;
+	}
 	
 	.welcome-hotel-page {
 		background: #93cadc;
@@ -4967,6 +5041,27 @@ color: #769daa;
 
 /*small-phones*/
 @media screen and (max-width: 599px) {
+
+	.metrics__inner {
+		height: 50px;
+		padding-left: 9px;
+		padding-right: 9px;
+		padding-top: 6px;
+		padding-bottom: 4px;
+		box-sizing: border-box;
+	}
+
+	.metric {
+		font-size: 10px;
+		padding-left: 21px;
+	}
+
+	.metric:before {
+		width: 14px;
+		height: 14px;
+		background-size: 12px;
+		left: -1px;
+	}
 
 	.chats-page article .wrapper {
 		min-height: calc(100vh - 43px);
@@ -6422,7 +6517,7 @@ button.btn-price:active, button.btn-price:hover {
 .offer-page__line--buttons {
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 		padding-top: 6px;
-		padding-bottom: 6px;
+		padding-bottom: 4px;
 }
 
 .route__phone-def, .route__site-def {
@@ -6431,6 +6526,26 @@ button.btn-price:active, button.btn-price:hover {
 
 .route__phone-link, .route__site-link {
 	font-size: 14px;
+}
+
+.offer-page__info-number-wrapper {
+	margin-top: 0;
+}
+
+.offer-page__info-number-inner {
+	margin-top: 2px;
+}
+
+.offer-page__info-number-views {
+	padding-left: 16px;
+	margin-right: 7px;
+}
+
+.offer-page__info-number-views:before {
+	width: 14px;
+	height: 14px;
+	background-size: 14px;
+	top: 0;
 }
 
 .share {
