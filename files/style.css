@@ -4334,6 +4334,9 @@ color: #769daa;
 .offer-page__wrapper--no-active .route__pets:before {
 	background-image: url('../images/pets_gray.png');
 }
+.offer-page__wrapper--no-active .offer-page__info-number-views:before {
+	background-image: url('../images/eye-small_gray.png');
+}
 .offer-page__wrapper--no-active .share__button {
 	background-color: #b7b7b7;
 }
